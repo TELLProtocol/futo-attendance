@@ -25,9 +25,9 @@ $jowin_err = $jowin_erra = $jowin_errb = $jowin_errc = $jowin_errd = '';
 /* JS Script manipulator */
 $jsSnippet = $jsScript = "";
 
-/* Image placeholders  */
-$logo = "https://tellprotocol.com/FLogo.webp";
-$logo1 = "https://tellprotocol.com/FLogo1.webp";
+/* Image placeholders */
+$logo = "https://pub-13aae4d6914c4a9094ca69d1dc0ef966.r2.dev/FLogo.png";
+$logo1 = "https://pub-13aae4d6914c4a9094ca69d1dc0ef966.r2.dev/FLogo1.png";
 
 /* Domain placeholders  */
 $hostUrl = getDomain();
@@ -62,7 +62,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 		
 		LIMIT 1		
 		';
-
 		if($stmt = $pdo->prepare($sql)){
 			$param_maile = trim($_POST['usrmail']);
 			$stmt->bindParam(":maile", $param_maile, PDO::PARAM_STR);
